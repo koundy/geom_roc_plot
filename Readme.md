@@ -13,6 +13,11 @@ This is a new geom created for plotting the ROC curves. Even though there are pa
 ### Consider 3 cases, in which X3 is better than x2 and x2 is better than x1
 
 ```r
+library(ggplot2)
+library(pROC)
+source("ROC_plot.R")
+source("Theme_Publication.R")
+
 x1 <- rnorm(50); x2 <- c(rnorm(25),rnorm(25,1,1)); x3 <- c(rnorm(25),rnorm(25,2,1))
 y <- c(rep("A",25),rep("B",25))
 
