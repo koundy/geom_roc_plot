@@ -15,7 +15,7 @@ This is a new geom created for plotting the ROC curves. Even though there are pa
 ```r
 library(ggplot2)
 library(pROC)
-source("ROC_plot.R")
+source("ROC_Plot.R")
 source("Theme_Publication.R")
 
 x1 <- rnorm(50); x2 <- c(rnorm(25),rnorm(25,1,1)); x3 <- c(rnorm(25),rnorm(25,2,1))
